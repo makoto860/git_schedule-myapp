@@ -1,0 +1,40 @@
+<h3>スケジュール詳細</h3>
+<table>
+  <tr>
+    <th>タイトル</th>
+    <td><%= @schedule9.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @schedule9.first_date.to_s(:date_jp) %></td>
+  </tr>
+  
+  <tr>
+    <th>終了日</th>
+    <td><%= @schedule9.final_date.to_s(:date_jp) %></td>
+  </tr>
+  
+  <tr>
+    <th>終日</th>
+    <td>
+      <% if @schedule9.all_day == "1" %>
+      ◯
+      <% else @schedule9.all_day == "0" %>
+　　      
+      <% end %>
+    </td>
+  </tr>
+
+  
+  <tr>
+    <th>スケジュールメモ</th>
+    <td><%= @schedule9.schedule_memo %></td>
+  </tr>
+</table>
+<div>
+  <ul>
+    <li><%= link_to "スケジュール一覧に戻る", :schedule9s %></li>
+    <li><%= link_to "スケジュール編集をする", :schedule9s %></li>
+    <li><%= link_to "スケジュールを削除する", :schedule9s %></li>
+  </ul>
+</div>

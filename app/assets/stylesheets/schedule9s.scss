@@ -1,0 +1,39 @@
+// Place all the styles related to the schedule9s controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+header {
+  background-color: #33CC00	;
+  font-size: 25px;
+  padding-left: 30%;
+  color: #993300;
+}
+
+table th {
+  background-color: #FFCCFF;
+  padding: 10px 20px;
+}
+ 
+table td {
+  background-color: #FFCCCC;
+  padding: 10px 20px;
+}
+ 
+.notice {
+  padding: 10px;
+  border: 3px solid #000;
+  color: #FFF;
+  background-color: #0066FF;
+}
+
+footer {
+  background-color: #33CC00	;
+  color :#993300;
+  font-size: 25px;
+  margin-top: 20%;
+}
+
+.error_message {
+  border: 1px solid #33FFFF;
+  color :#993300;
+  
+}
