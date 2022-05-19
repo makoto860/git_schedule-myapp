@@ -6,7 +6,7 @@ class Schedule9 < ApplicationRecord
 
   def final_date_after_today_date
     
-    errors.add(:final_date,"は翌日以降の日にちを選択して") if final_date < now = Time.current
+    errors.add(:final_date,"は翌日以降の日にちを選択して") if final_date < Date.current
     
   end
   
