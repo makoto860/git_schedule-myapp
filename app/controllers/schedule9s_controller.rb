@@ -19,7 +19,10 @@ class Schedule9sController < ApplicationController
     end
   end
  
-  
+  def final_date_after_today
+    @schedule9 = Schedule9.new(params.require(:schedule9).permit(:title, :first_date, :final_date, :all_day, :schedule_memo, :final_date_after_today))
+    flash[:alert] = "スケジュールを新規登録できません"
+  end
   
   
  
