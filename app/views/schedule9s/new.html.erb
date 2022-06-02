@@ -1,5 +1,10 @@
 <h3>スケジュール新規作成</h3>
+
 <%= render "shared/error", obj: @schedule9 %>
+
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
 
 <%= form_with model: @schedule9 do |f| %>
 <table>
@@ -13,8 +18,6 @@
     <td><%= f.date_field :first_date %></td>
   </tr>
   
-  
- 
   <tr>
     <th><%= f.label :final_date ,"終了日" %></th>
     <td><%= f.date_field :final_date %></td>
